@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCHERS NETWORK - HOMEPAGE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/f0dc26a1be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("5A7nE4A9eKeospPJF"); // Your public key
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header__box">
+        <h6 class="header__box--para">
+          The PREMIER online television network organization of De La Salle
+          University - Manila.
+        </h6>
+      </div>
+      <figure class="header__logo">
+        <img
+          class="header__logo--img"
+          src="./assets/ARCH__logo.svg"
+          alt="ARCH__logo"
+        />
+      </figure>
+      <nav>
+        <ul class="nav__links--list">
+          <li><a href="" class="nav__link">Home</a></li>
+          <li><a href="" class="nav__link">Channels</a></li>
+          <li><a href="" class="nav__link">Art</a></li>
+          <li><a href="" class="nav__link">Talents</a></li>
+          <li><a href="" class="nav__link">About Us</a></li>
+          <li><a href="" class="nav__link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="latest-releases">
+      <div class="container">
+        <div class="row">
+          <div class="section__description">
+            <h4 class="section__description--title">ARCHERS NETWORK</h4>
+            <h3 class="section__description--para">LATEST RELEASES</h3>
+          </div>
+          <div class="releases__carousel--container">
+            <div class="releases__carousel--track">
+              <div class="releases__card">
+                <figure class="card__img">
+                  <img
+                    class="releases__card--img"
+                    src="./assets/pic.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="releases__card--overlay">
+                  <h4 class="card__title">ARCHers RECAP</h4>
+                  <p class="card__date">January 21, 2025</p>
+                </div>
+              </div>
+              <figure class="releases__button" onclick="previousSlide()">
+                <img class="left" src="./assets/arrow.svg" alt="" />
+              </figure>
+              <div class="releases__card center__card">
+                <figure class="card__img">
+                  <img
+                    class="releases__card--img"
+                    src="./assets/pic.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="releases__card--overlay">
+                  <h4 class="card__title">ARCHers RECAP</h4>
+                  <p class="card__date">January 22, 2025</p>
+                </div>
+              </div>
+              <figure class="releases__button" onclick="nextSlide()">
+                <img class="right" src="./assets/arrow.svg" alt="" />
+              </figure>
+              <div class="releases__card">
+                <figure class="card__img">
+                  <img
+                    class="releases__card--img"
+                    src="./assets/pic.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="releases__card--overlay">
+                  <h4 class="card__title">ARCHers RECAP</h4>
+                  <p class="card__date">January 23, 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="latest-posts">
+      <div class="container">
+        <div class="row">
+          <div class="latest__header">
+            <h1 class="latest__title">LATEST POSTS</h1>
+            <hr />
+          </div>
+          <div class="latest__content">
+            <div class="latest__card--wrapper">
+              <div class="latest__card">
+                <figure class="card__img">
+                  <img
+                    class="latest__card--img"
+                    src="./assets/pic2.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="latest__card--overlay">
+                  <h4 class="card__title">PHOTO ALBUM</h4>
+                  <p class="card__date">January 21, 2025</p>
+                </div>
+              </div>
+              <div class="latest__card">
+                <figure class="card__img">
+                  <img
+                    class="latest__card--img"
+                    src="./assets/pic2.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="latest__card--overlay">
+                  <h4 class="card__title">PHOTO ALBUM</h4>
+                  <p class="card__date">January 21, 2025</p>
+                </div>
+              </div>
+            </div>
+            <button><a href="#" class="latest__button">View More</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__description">
+        <h1 class="footer__title">
+          Partner with <span class="green">Archers Network!</span>
+        </h1>
+        <div class="footer__address">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="address">
+            Room 501, Br. Connon FSC Hall, De La Salle University, Malate,
+            Manila, Philippines
+          </p>
+        </div>
+        <div class="footer__email">
+          <i class="fa-regular fa-envelope"></i>
+          <p class="email">archersnetwork@dlsu.edu.ph</p>
+        </div>
+        <div class="footer__icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <form id="contact__form" onsubmit="contact(event)">
+        <div class="form__list--top">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Contact No.</label>
+            <input class="input" name="contact_number" type="text" />
+          </div>
+        </div>
+        <div class="form__list--bottom">
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Inquiry</label>
+            <input
+              class="input"
+              name="message"
+              type="text"
+              required
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <button type="submit" id="contact__submit" class="form__submit">
+          Submit
+        </button>
+      </form>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("contact__submit")
+          .addEventListener("submit", contact);
+      });
+    </script>
+  </body>
+</html>
