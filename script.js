@@ -86,14 +86,11 @@ function contact(event) {
             '5A7nE4A9eKeospPJF'
         )
         .then(() => {
-            message.textContent = "Message sent successfully!";
-            message.style.display = "block";
-            message.style.color = "green";
+            console.log("Message sent successfully!");
+
             event.target.reset();
         })
         .catch(() => {
-            message.textContent = "Email service unavailable. Please contact us at archersnetwork@dlsu.edu.ph";
-            message.style.display = "block";
-            message.style.color = "red";
+          console.log("Message did not send.")
         });
 }
