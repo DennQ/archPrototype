@@ -199,6 +199,10 @@ a {
     filter: brightness(75%);
 }
 
+.card__img {
+    cursor: pointer;
+}
+
 
 /* LATEST POSTS */
 
