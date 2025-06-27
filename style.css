@@ -80,8 +80,12 @@ a {
     padding-bottom: 4px;
 }
 
-.nav__link:active {
+.active {
+    border: solid 2px transparent;
+    margin-right: 48px;
+    color: #232323;
     border-bottom: solid 2px #26ab7b;
+    padding-bottom: 4px;
 }
 
 .section__description {
